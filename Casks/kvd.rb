@@ -3,7 +3,7 @@ cask "kvd" do
   name "kvd"
   desc "A dumb Redis-compatible key-value database using Docker as storage"
   homepage "https://github.com/YungBricoCoop/kvd"
-  version "0.7"
+  version "0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "kvd" do
   on_macos do
     on_intel do
       url "https://github.com/YungBricoCoop/kvd/releases/download/v#{version}/kvd_Darwin_x86_64.tar.gz"
-      sha256 "5b2b7286d28a942d4bb84956523b0612c3d15dc66ec3f577ea8c87359248e551"
+      sha256 "38a5078445e1d553754d718316e0df23be312b063f7dba7e4a72355ebf812a57"
     end
     on_arm do
       url "https://github.com/YungBricoCoop/kvd/releases/download/v#{version}/kvd_Darwin_arm64.tar.gz"
-      sha256 "36fd4276f22afbbfa577d9f0e8d0135e118206812ba51fb48ed0c907d00a213e"
+      sha256 "b842ca18bec538e4af8ace6e003cd8809a2e7a393b6c0ced2feef2c915ae8b74"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/YungBricoCoop/kvd/releases/download/v#{version}/kvd_Linux_x86_64.tar.gz"
-      sha256 "0b547aa4087393a5df9f76ca453bee73075ea446a96427f92669cb61e0904e42"
+      sha256 "305c6807e28df733c1e3bbcc4c9bdd17a388a551902e18a124ac84a20a0b935c"
     end
     on_arm do
       url "https://github.com/YungBricoCoop/kvd/releases/download/v#{version}/kvd_Linux_arm64.tar.gz"
-      sha256 "eb3710f11a4f76939a3821ad56a2a78118131ad28408a869460236d2c93f7d19"
+      sha256 "c8a5876be522387418b356ff3a455b0d6106579784bcf190ce11a232eddcadb7"
     end
   end
 
